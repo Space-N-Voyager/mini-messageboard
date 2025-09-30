@@ -1,0 +1,7 @@
+<h1>Mini Message App</h1>
+<% messages.forEach((message, index) => { %>
+    <p>User: <%= message.user %></p>
+    <p>Message: <%= message.text %></p>
+    <p>Date: <%= message.added %></p>
+    <a href="/message/<%= index %>">Open</a>
+<%}); %>
